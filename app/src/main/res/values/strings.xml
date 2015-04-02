@@ -14,13 +14,15 @@
         <item>@string/quote5</item>
         <item>@string/quote6</item>
     </string-array>
+            <!--    button  -->
+    <string name="BtnText">Next Quote</string>
 
-
-    <string name="quote1">hejsan</string>
-    <string name="quote2">åöä</string>
+         <!--    textView  -->
+    <string name="quote1">Yo</string>
+    <string name="quote2">xyz</string>
     <string name="quote3">hello world</string>
-    <string name="quote4">tjena</string>
-    <string name="quote5">tjaba</string>
+    <string name="quote4">yo</string>
+    <string name="quote5">yo my nigga</string>
     <string name="quote6">Sunkingofthemind</string>
 
     <string name="clickmore">Click more to randomize Quote</string>
