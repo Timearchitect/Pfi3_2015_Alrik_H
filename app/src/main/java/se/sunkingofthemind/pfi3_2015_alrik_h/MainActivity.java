@@ -57,7 +57,6 @@ public class MainActivity extends ActionBarActivity {
         myText2.setText(R.string.clickmore);
         myText.setText(quotes[citatIndex]);
         citatIndex=r.nextInt(quotes.length);
-
         Log.i("assignmet_1","test");
 
 
