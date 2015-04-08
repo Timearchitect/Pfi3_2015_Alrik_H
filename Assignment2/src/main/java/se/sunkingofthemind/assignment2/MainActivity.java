@@ -2,8 +2,10 @@ package se.sunkingofthemind.assignment2;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +14,34 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+        final View layout =findViewById(R.id.imageView);
+        final View layout2 =findViewById(R.id.imageView2);
+        final View layout3 =findViewById(R.id.imageView3);
+        final View layout4 =findViewById(R.id.imageView4);
+
+        layout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("sadasd","layout");
+            }
+        });
+        layout2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("sadasd","layout2");
+            }
+        });
+        layout3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("sadasd","layout3");
+            }
+        });
+        layout4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("sadasd","layout4");
+            }
+        });
     }
 
 
@@ -35,5 +65,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onclick(){
+
     }
 }
