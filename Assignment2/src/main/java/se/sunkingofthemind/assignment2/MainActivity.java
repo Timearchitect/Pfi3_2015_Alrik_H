@@ -1,49 +1,53 @@
 package se.sunkingofthemind.assignment2;
 
+import android.animation.AnimatorSet;
+
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    StartFragment sf = new StartFragment();
+  /*  protected OnBackPressedListener onBackPressedListener;
+    public void setOnBackPressedListener(OnBackPressedListener onBackPressedListener) {
+        this.onBackPressedListener = onBackPressedListener;
+    }
+    @Override
+    public void onBackPressed() {
+        if (onBackPressedListener != null)
+            onBackPressedListener.doBack();
+        else
+            super.onBackPressed();
+    }
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Skapa fragmentmanager
+        FragmentManager fm = getFragmentManager();
+        // skapa fragmenttransaction
+        FragmentTransaction ft = fm.beginTransaction();
+        // StartFragment sf = new StartFragment();
+
+        ft.addToBackStack(null);
+        ft.replace(R.id.StartScreen, sf);
+        ft.commit();
 
 
-
-        final View layout =findViewById(R.id.imageView);
-        final View layout2 =findViewById(R.id.imageView2);
-        final View layout3 =findViewById(R.id.imageView3);
-        final View layout4 =findViewById(R.id.imageView4);
-
-        layout.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.i("sadasd","layout");
-            }
-        });
-        layout2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.i("sadasd","layout2");
-            }
-        });
-        layout3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.i("sadasd","layout3");
-            }
-        });
-        layout4.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.i("sadasd","layout4");
-            }
-        });
     }
+  /*  public Void onCreateOptionsMenu(){
 
+
+      return
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -60,9 +64,9 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+      /*  if (id == R.id.action_settings) {
             return true;
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
     }
@@ -70,4 +74,28 @@ public class MainActivity extends ActionBarActivity {
     public void onclick(){
 
     }
+
+
+
+
+
+    /*
+
+
+
+    public void onBackPressed() {
+        if(sf.getView().isShown()){
+            Log.i("sadasd","layout4");
+           // Toast t = Toast.makeText(this, "Tickets", Toast.LENGTH_SHORT);
+      //      t.show();
+        }
+
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        StartFragment sf= new StartFragment();
+        // byt layout till fragment2
+        ft.replace(R.id.StartScreen,sf);
+        ft.commit();
+
+    }*/
 }
