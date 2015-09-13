@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/SkanetrafikenActionBar</item>
+        <item name="android:actionMenuTextColor">#fff</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">roboto</item>
+        <item name="android:showDividers">beginning</item>
+        <item name="android:divider">#fff</item>
+
+
+        <!-- Support library compatibility -->
+        <item name="actionMenuTextColor">#090</item>
+        <item name="actionBarStyle">@style/SkanetrafikenActionBar</item>
+
+
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="SkanetrafikenActionBar"
+        parent="@android:style/Theme.Holo.Light">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:fontFamily">@style/TitleTextStyle</item>
+
+
+        <item name="android:background">@drawable/gradient</item>
+        <item name="android:backgroundStacked">@drawable/gradient</item>
+        <item name="android:backgroundSplit">@drawable/gradient</item>
+        <item name="android:height">48dp</item>
+        <item name="android:textSize">14sp</item>
+
+
+
+
+
+        <!-- Support library compatibility -->
+
+
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="background">@drawable/gradient</item>
+        <item name="backgroundStacked">@drawable/gradient</item>
+        <item name="backgroundSplit">@drawable/gradient</item>
+        <item name="height">48dp</item>
+
+    </style>
+
+    <style name="TitleTextStyle"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" >
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">roboto</item>
+
+
+        <!-- Support library compatibility -->
+        <item name="actionMenuTextColor">#562</item>
+    </style>
+
+
+
+</resources>

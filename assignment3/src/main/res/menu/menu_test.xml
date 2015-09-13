@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".TestActivity"  >
+
+    <item
+        style="@+style/TitleTextStyle"
+        android:id="@+id/action_bar_title"
+        android:title="Skanetrafiken"
+        android:label="Skanetrafiken2"
+
+        app:title="skanetrafiken"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        tools:showAsAction="always"
+        android:showAsAction="always"/>
+
+    <item
+        style="@+style/TitleTextStyle"
+        android:id="@+id/item3"
+        android:title="test"
+        android:label="Skanetrafiken"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        tools:showAsAction="always"
+        android:showAsAction="always"
+        tools:icon="@drawable/ic_action_refresh"
+        android:icon="@drawable/ic_action_refresh"/>
+
+    <item android:id="@+id/refresh" android:title="@string/refresh"
+        style="@+style/TitleTextStyle"
+        android:orderInCategory="3" app:showAsAction="always"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_rotate"
+        />
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+
+
+</menu>
+
+
+<!--<?xml vrsion="1.0" encoding="utf-8"?>-->
