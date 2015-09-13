@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="myText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:text">hej</item>
+        <item name="android:onClick">openInfo</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+</resources>

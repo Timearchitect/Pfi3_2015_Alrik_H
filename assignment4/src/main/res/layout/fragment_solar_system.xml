@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.sunkingofthemind.assignment4.SolarSystem"
+    android:background="#000">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/mercury"
+        android:gravity="center|bottom"
+        android:text="Mercury"
+        android:layout_gravity="left|top"
+        android:id="@+id/textView0"
+        android:clickable="true"
+        android:onClick="openInfo"
+        />
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/venus"
+        android:gravity="center|bottom"
+        android:text="Venus"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/textView1"
+        android:clickable="true"
+        android:onClick="openInfo"/>
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/tellus"
+        android:gravity="center|bottom"
+        android:text="Tellus"
+        android:layout_gravity="right|top"
+        android:id="@+id/textView2"
+        android:clickable="true"
+        android:onClick="openInfo"/>
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/mars"
+        android:gravity="center|bottom"
+        android:text="Mars"
+        android:layout_gravity="left|center_vertical"
+        android:id="@+id/textView3"
+        android:clickable="true"
+        android:onClick="openInfo"/>
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/jupiter"
+        android:gravity="center|bottom"
+        android:text="Jupiter"
+        android:layout_gravity="center"
+        android:id="@+id/textView4"
+        android:clickable="true"
+        android:onClick="openInfo"/>
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/saturn"
+        android:gravity="center|bottom"
+        android:text="Saturn"
+        android:layout_gravity="right|center_vertical"
+        android:id="@+id/textView5"
+        android:clickable="true"
+        android:onClick="openInfo"/>
+
+    <TextView
+        style="@style/myText"
+        android:background="@drawable/neptune"
+        android:gravity="center|bottom"
+        android:text="Neptune"
+        android:layout_gravity="left|bottom"
+        android:id="@+id/textView6"
+        android:clickable="true"
+        android:onClick="openInfo"/>
+
+    <TextView
+
+        style="@style/myText"
+        android:background="@drawable/uranus"
+        android:gravity="center|bottom"
+        android:text="Uranus"
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/textView7"
+        android:clickable="true"
+        android:onClick="openInfo"
+              />
+
+</FrameLayout>
